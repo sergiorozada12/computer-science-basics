@@ -43,11 +43,3 @@ class linkedList:
     while(nodeToIterate!=None):
         print(nodeToIterate.valueNode)
         nodeToIterate=nodeToIterate.next
-
-a = linkedList()
-for i in range (5):
-    a.addNode(i)
-a.showingLinkedList()
-print(a.findNode(3))
-a.removeNode(3)
-a.showingLinkedList()
