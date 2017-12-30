@@ -1,5 +1,5 @@
 # data-structures
 
-**Objective:** The idea of this project is to gather basic data structures in Python for educational purposes.
+**Objective:** The idea of this project is to gather basic algorithm and structures in Python and Matlab for educational purposes within the context of Data Science.
 
-**Domain:** All code published in this profile lies within the Data Science domain.
+Sorting and searching algorithms in Matlab as well as basic data structures in Python can be found in this repository.
