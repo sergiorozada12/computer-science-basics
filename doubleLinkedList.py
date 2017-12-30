@@ -45,11 +45,3 @@ class doubleLinkedList:
     while(nodeCopy!=None):
       print(nodeCopy.value)
       nodeCopy=nodeCopy.next
-
-a = doubleLinkedList()
-for i in range (5):
-    a.addNode(i)
-a.showingLinkedList()
-print(a.search(3))
-a.removeNode(3)
-a.showingLinkedList()
