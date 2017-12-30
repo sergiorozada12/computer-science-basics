@@ -31,18 +31,3 @@ class stack:
 
   def isEmpty(self):
     return self.head==None
-
-arr=[1,2,3,4,5]
-a=stack()
-
-print(a.isEmpty())
-a.pop()
-print(a.peek())
-
-for i in arr:
-  a.push(i)
-
-print(a.isEmpty())
-print(a.peek())
-a.pop()
-print(a.peek())
