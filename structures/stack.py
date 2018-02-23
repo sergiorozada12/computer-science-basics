@@ -1,4 +1,4 @@
-class stack:
+class Stack:
   class node:
     def __init__(self,data):
       self.value=data
@@ -18,6 +18,7 @@ class stack:
 
     if(self.head==None):
       self.head=newNode
+      return
 
     newNode.next=self.head
     self.head=newNode
