@@ -1,4 +1,4 @@
-class linkedList:
+class LinkedList:
 
   class node:
     def __init__(self,mvalueNode):
