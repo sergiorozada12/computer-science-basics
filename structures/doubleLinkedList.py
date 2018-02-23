@@ -1,4 +1,4 @@
-class doubleLinkedList:
+class DoubleLinkedList:
   class node:
     def __init__(self,data):
       self.value=data
@@ -35,6 +35,9 @@ class doubleLinkedList:
 
     while(nodeCopy!=None):
       if(nodeCopy.value==data):
+        if(nodeCopy == self.head):
+          self.header = self.header.next
+          self.header.prev = None
         nodeCopy.prev.next=nodeCopy.next
         nodeCopy.next.prev=nodeCopy.prev
       nodeCopy=nodeCopy.next
