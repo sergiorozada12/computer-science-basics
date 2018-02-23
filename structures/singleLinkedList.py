@@ -12,18 +12,20 @@ class linkedList:
     newNode=self.node(valueNodeToAdd)
     if(self.head == None):
         self.head = newNode
-    else:
-        newNode.next = self.head
-        self.head = newNode
+        return
+    newNode.next = self.head
+    self.head = newNode
 
   def removeNode(self,valueNodeToRemove):
     current = self.head
     previous = None
-    Found = False
-    while (current.valueNode!=None) & ~Found:
+    while (current.valueNode!=None):
         if(current.valueNode == valueNodeToRemove):
+            if(current == self.head):
+              self.head = current.next
+              return
             previous.next = current.next
-            Found = True
+            return
         else:
             previous=current
             current=current.next
